@@ -1,0 +1,25 @@
+h1{
+color: #0a9ea1;
+text-align:center;
+}
+.heading{
+  align-content: center;
+}
+button{
+
+border: solid #164e4f 2px;
+color: #164e4f;
+}
+button:hover{
+color: #c9d1d1;
+background-color: #043838;
+}
+form{
+color: #107058;
+}
+.footer {
+  background-color: lightblue;
+}
+.warning {
+  color: red;
+}
