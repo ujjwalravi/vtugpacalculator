@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('.warning').hide();
   $('.submit').click(function() {
     var totalScore = 0;
     var totalCredit = 0;
