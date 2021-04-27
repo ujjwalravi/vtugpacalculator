@@ -26,3 +26,34 @@ color: #107058;
 .notice{
   color: green;
 }
+.gpasubmit {
+  margin-top: 6px;
+}
+
+.sgpalink {
+  border: solid rgb(3, 129, 3) 2px;
+  padding: 5px;
+  background-color: rgb(181, 247, 181);
+  color: black;
+  width: 250px;
+  text-align: center;
+  display: inline-block;
+}
+
+.sgpalink:hover {
+  border-radius: 5px;
+  border-color: blue;
+  display: inline-block;
+}
+
+.margin {
+  margin-top: 7px;
+}
+
+.padding {
+  padding-right: 27px;
+  padding-left: 27px;
+}
+.textt {
+  cursor: pointer;
+}

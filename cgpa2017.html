@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/84ab74962b.js"></script>
-    <script type="text/javascript" src="js/firstSem.js"></script>
+    <script type="text/javascript" src="js/cgpa2017.js"></script>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -24,13 +24,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item dropdown active">
+            <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 First Year
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="phy.html">Physics Cycle</a>
-                <a class="dropdown-item active" href="index.html">Chemistry Cycle</a>
+                <a class="dropdown-item " href="index.html">Chemistry Cycle</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -159,80 +159,22 @@
           </ul>
         </div>
       </nav>
-      <h3>First Year <strong>Chemistry Cycle </strong></h3>
-      <!--forms-->
+      <h3><strong>CGPA Calculator 2017 Scheme </strong></h3>
       <hr>
       <form class="myForm">
         <div class="row">
-          <div class=" col-md-4 offset-md-3  ">
-            <label class="sub1">Calculus and Linear Algebra</label>
-          </div>
-          <div class=" col-md-1 offset-md-0">
-            <input type="number" name="4" id="subject1" placeholder="Marks...">
-          </div>
+            <div class=" col-md-3 offset-md-3  ">
+              <label class="sgpa">SGPAs separated by comma (,) </label>
+            </div>
+            <div class=" col-md-6 offset-md-0">
+              <input type="text" name="1" id="sgpaplaceholder" placeholder="8.55,8.85,7.45">
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 offset-md-3">
-            <label class="sub2">Engineering Chemistry</label>
-          </div>
-          <div class="col-md-1 offset-md-0">
-            <input type="number" name="4" id="subject2" placeholder="Marks...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 offset-md-3">
-            <label class="sub3">C Programming for Problem Solving</label>
-          </div>
-          <div class="col-md-1 offset-md-0">
-            <input type="number" name="3" id="subject3" placeholder="Marks...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 offset-md-3">
-            <label class="sub4">Basic Electronics</label>
-          </div>
-          <div class="col-md-1 offset-md-0">
-            <input type="number" name="3" id="subject4" placeholder="Marks...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 offset-md-3">
-            <label class="sub5">Elements of Mechanical Engineering</label>
-          </div>
-          <div class="col-md-1 offset-md-0">
-            <input type="number" name="3" id="subject5" placeholder="Marks...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 offset-md-3">
-            <label class="sub6">Engineering Chemistry Lab</label>
-          </div>
-          <div class="col-md-1 offset-md-0">
-            <input type="number" name="1" id="subject6" placeholder="Marks...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 offset-md-3">
-            <label class="sub7">C Programming Lab</label>
-          </div>
-          <div class="col-md-1 offset-md-0">
-            <input type="number" name="1" id="subject7" placeholder="Marks...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 offset-md-3">
-            <label class="sub8">Technical English-I</label>
-          </div>
-          <div class="col-md-1 offset-md-0">
-            <input type="number" name="1" id="subject8" placeholder="Marks...">
-          </div>
-        </div>
-    </form>
+      </form>
       <hr>
-      <button class="submit" type="button" name="button">CALCULATE <i class="fa fa-calculator" aria-hidden="true"></i></button>
-      <span id="result"></span>
-      <button type="reset" onclick="document.location.reload()">RESET <i class="fa fa-refresh" aria-hidden="true"></i></button>
-      <p class="warning"></p>
+      <div class="calculatecgpa"></div>
+      <div class="warning"></div>
+      <button class="gpasubmit" type="button" name="button">CALCULATE <i class="fa fa-calculator" aria-hidden="true"></i></button>
     </div>
   </body>
 </html>

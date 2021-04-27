@@ -5,8 +5,9 @@ $(document).ready(function() {
     var totalCredit = 0;
     var x = $(".myForm").serializeArray();
     $.each(x, function(i, field) {
-      if (((+field.value)== null)|| ((+field.value)==0)){
-        console.log('No input/Invalid Input');
+      if(( field.value=='0')) {
+        totalScore = totalScore + 0;
+        totalCredit = totalCredit + 0;
       }
       else {
         totalScore = totalScore + findGrade(+field.value, +field.name);
@@ -14,7 +15,7 @@ $(document).ready(function() {
       }
     });
     var sgpa = totalScore/totalCredit;
-    $('#result').text(sgpa.toFixed(2));
+    $('#result').text(sgpa.toFixed(2) + ' and your percentage is ' + sgpatoPer(sgpa) + '%');
   });
 });
 
@@ -37,4 +38,8 @@ function findGrade(y,c) {
     $('#result').text('Some error occured please check the values');
     exit(0);
   }
+}
+
+function sgpatoPer(s) {
+  return ((s-0.75)*10).toFixed(2);
 }
