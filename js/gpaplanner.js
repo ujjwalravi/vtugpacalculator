@@ -5,7 +5,7 @@ $(document).ready(function() {
         var knownGpa = $('#gpaplaceholder').val();
         var commaGpa = $('#typegpaplaceholder').val();
         var sepGpa = commaGpa.split(',');
-        var credits = [20, 20, 24, 25, 24, 20, 18];
+        var credits = [20, 20, 24, 24, 25, 24, 20, 18];
 
         console.log(sepGpa);
         if (sepGpa.length != +knownGpa) {
@@ -16,7 +16,7 @@ $(document).ready(function() {
         var finalResult = calculatefinal(cgpa, +targetGpa, +endGpa, +knownGpa);
         console.log(finalResult);
 
-        $('.plannedgpa').text('You need to score atleast '+ finalResult.toFixed(2) + ' GPA in next ' + (+endGpa-+knownGpa) + ' semesters each.').css('color', 'green');
+        $('.plannedgpa').text('You need to score atleast '+ finalResult.toFixed(2) + ' GPA in next ' + (+endGpa-+knownGpa) + ' semesters each.').css('color', 'blue');
         }
     });
 });

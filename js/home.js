@@ -1,7 +1,6 @@
 $(document).ready(function() {
+    $('.text').text('Use menu bar to calculate CGPA.');
     $('.textt').hover(function() {
-        $('.text').text('Use menu bar to calculate CGPA');   
-    }, function() {
-        $('.text').text('');
+        $('.text').css('font-weight', 'bold');   
     });
 });

@@ -5,6 +5,6 @@ $(document).ready(function() {
         if (final <=0) {
             final = 0;
         }
-        $('.calculateper').text(final + '%');
+        $('.calculateper').text(final + '%').css('color', 'blue');
     });
 });

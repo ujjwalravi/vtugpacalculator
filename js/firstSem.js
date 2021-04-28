@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('.instr').append("<li>If you were absent for some exam or the exam wasn't held then type marks as 0 alongside particular subject.</li>");
+  $('.smthng').append("<hr>");
   $('.warning').hide();
   $('.submit').click(function() {
     var totalScore = 0;
@@ -15,7 +17,7 @@ $(document).ready(function() {
       }
     });
     var sgpa = totalScore/totalCredit;
-    $('#result').text(sgpa.toFixed(2) + ' and your percentage is ' + sgpatoPer(sgpa) + '%');
+    $('#result').text(sgpa.toFixed(2) + ' | ' + sgpatoPer(sgpa) + '%').css('color', 'blue').css('font-weight', 'bold');
   });
 });
 

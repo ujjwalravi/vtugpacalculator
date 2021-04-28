@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.gpasubmit').click(function() {
         var commaGpa = $('#sgpaplaceholder').val();
         var arrGpa = commaGpa.split(',');
-        var credits = [20, 20, 24, 25, 24, 20, 18];
+        var credits = [20, 20, 24, 24, 25, 24, 20, 18];
         if (arrGpa.length == 0) {
             $('.calculatecgpa').text('Enter GPAs, this field cannot be blank').css('color', 'red');
         }
